@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+<body>
+<div>
+<h1>Create Post</h1>
+    <form method = post>
+        {% csrf_token %}
+        {{form.as_p}}
+        id: <input type="text" name = "id"><br><br>
+        title:<input type="text" name = "title"><br><br>
+        content:<input type="text" name="con"><br><br>
+        create_at:<input type="date" name="cd"><br><br>
+        update_at:<input type="date" name="up"><br><br>
+        <button>Submit</button>
+        <button>Reset</button>
+</div>
+</body>
+</html>
